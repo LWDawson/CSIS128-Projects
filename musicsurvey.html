@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>musicsurvey.html</title>
+<meta charset="utf-8">
+<style>
+form { background-color:#CCFFFF;
+	font-family: Times New Roman, sans-serif;
+    padding: 10px;
+    min-width: 400px;	}
+label { float: left;
+	width: 150px; 
+	clear: left;
+	text-align: right; 
+	padding-right: 10px;
+	margin-top: 10px; }
+input, textarea { margin-top: 10px; 
+                  display: block;} 
+#mySubmit { margin-left: 160px; }
+</head>
+<body>
+<h1>Music Survey</h1>
+<form method="post" id="musicSurvey" action="http://www.markmurtha.com/csis128/readform.asp" ">
+<div>
+<label for="userName">Name:</label>
+<input type="text" name="userName" id="userName" class="required">
+</div>
+<div>
+<label for="userEmail">E-mail:</label>
+<input type="text" name="userEmail" id="userEmail" class="required email">
+<fieldset>
+<legend>Select your favorite types of music:</legend>
+<input type="checkbox" name="Pop" id="Pop" value="yes">
+Pop<br>
+<input type="checkbox" name="Rock" id="Rock" value="yes">
+Rock<br>
+<input type="checkbox" name="Alternative" id="Alternative" value="yes">
+Alternative<br>
+</fieldset>
+<fieldset>
+<legend>Select how ofter you purchase music:</legend>
+<input type="radio" name="weekly" id="weekly" value="weekly"> Weekly<br>
+<input type="radio" name="biweekly" id="biweekly" value="biweekly"> Biweekly<br>
+<input type="radio" name="monthly" id="monthly" value="monthly"> Monthly<br>
+<select size="4" name="locations" id="locations">
+</fieldset>
+<option>Select locations where you listen to music</option>
+<option value="Home">Home</option>
+<option value="Work">Work</option>
+<option value="Car">Car</option>
+<option value="Exercising">Exercising</option>
+</select>
+What role does music play in your life?<br>
+<textarea name="What role does music play in your life" id="Role" cols="60" rows="3">Enter your answer here</textarea>
+<input id="mySubmit" type="submit" value="Submit">
+<input id="reset" type="reset" value="Reset">
+<p>Leon Dawson <a href="mailto:S1368803@student.mcckc.edu">S1368803@student.mcckc.edu</a></p>
+
